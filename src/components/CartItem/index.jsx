@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import CartContext from '../../context/CartContext'
-import './index.css'
+import React, { useContext } from 'react';
+import CartContext from '../../context/CartContext';
+import './index.css';
 
 const CartItem = ({ item }) => {
-  const { onIncreaseQuantity, onDecreaseQuantity, removeFromCart } = useContext(CartContext)
+  const { onIncreaseQuantity, onDecreaseQuantity, removeFromCart } = useContext(CartContext);
 
   return (
     <li className="cart-item">
@@ -21,7 +21,7 @@ const CartItem = ({ item }) => {
         <button onClick={() => removeFromCart(item.id)} className="remove-btn">✖</button>
       </div>
     </li>
-  )
-}
+  );
+};
 
-export default CartItem
+export default CartItem;
